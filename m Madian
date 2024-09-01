@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# اسم السكريبت: network_scan.sh
+
+echo "Enter the network range (e.g., 192.168.1.0/24):"
+read network_range
+
+echo "Scanning network: $network_range"
+nmap -sn $network_range
